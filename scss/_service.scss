@@ -1,0 +1,37 @@
+
+.services{
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    @include mq(){
+        display:block;
+    }
+}
+.service{
+    width: 33.33333%;
+    border: solid 1px #565656;
+    border-radius: 5px 5px 0 0;
+    
+    @include mq(){
+        width: 100%;
+    }
+}
+
+.explane{
+    padding: 1rem;
+    text-align: justify;
+}
+.thead{
+    padding: 1rem;
+    background-color: #4C66FF;
+    font-weight: bold;
+    color: #ffffff;
+}
+.standard{
+    background-color: #0014CE;
+}
+.price{
+    padding:1rem;
+    background-color: rgb(217, 255, 0);
+}

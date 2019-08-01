@@ -1,0 +1,73 @@
+.heading{
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    
+    &::before{
+        content: "";
+        border-radius: 5px;
+        background-color: #0014CE;
+        width: 4rem;
+        height: 0.3rem;
+        position: absolute;
+        bottom: -1.5rem;
+        display: inline-block;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+.h2-heading{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    @include mq(){
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+    @include mq(sm){
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+.h3-heading{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.7rem;
+    @include mq(){
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+    @include mq(sm){
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+.h4-heading{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    
+    @include mq(){
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    @include mq(sm){
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    position: relative;
+    padding: 0.1em 0.5em;
+    background: -webkit-linear-gradient(to right, rgb(217, 255, 0), transparent);
+    background: linear-gradient(to right, rgb(217, 255, 0), transparent);
+    color: #545454;
+}
+
+.detail-list{
+    margin: 1.7rem;
+}

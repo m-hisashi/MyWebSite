@@ -1,0 +1,58 @@
+.btn-inquiry{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.28);
+    font-weight: bold;
+    overflow: hidden;
+    background: linear-gradient(#7c84c7 0%, #0014CE 100%);
+    text-shadow: 1px 1px 1px rgba(48, 47, 47, 0.66);
+    border:none;
+    margin: 2rem auto 2rem;
+    color:#fff;
+    &:active{
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);/*沈むように*/
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+        outline: 0;
+        background-image: linear-gradient(#7c84c7 0%, #5761b9 100%);/*グラデーションを明るく*/
+    }
+    &:focus{
+        outline: 0;
+    }
+    
+    a{
+        text-decoration: none;
+        line-height: 2.5rem;
+        display: block;
+        color: #fff;
+
+    }
+}
+.btn-submit{
+    @extend .btn-inquiry;
+    width: 5rem;
+}
+.btn-wrap{
+    text-align: center;
+}
+
+.btn-to-top{
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: linear-gradient(#7179c7 0%, #0014CE 100%);
+    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    z-index: 9;
+    text-align: center;
+}
+.fa-angle-up{
+    color: #fff;
+    font-size: 4rem;
+    
+}

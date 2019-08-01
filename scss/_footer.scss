@@ -1,0 +1,12 @@
+footer{
+    background-color: rgba(0, 38, 255, 0.7);
+    color: #ffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .footer-logo{
+        background-image: url('../img/logo.png');
+        background-size: cover;
+        width: 200px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,708 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700&display=swap&subset=japanese");
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(0, 38, 255, 0.7);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
+  color: #ffffff;
+  position: fixed;
+  transition: .5s;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+}
+
+header .header {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header .header .header-logo {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 200px;
+  height: 60px;
+  position: relative;
+  top: 10px;
+}
+
+header .header .gloval-nav {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+header .header .gloval-nav ul {
+  display: flex;
+}
+
+header .header .gloval-nav ul li {
+  margin-right: 20px;
+}
+
+header .header .gloval-nav ul li:last-child {
+  margin-right: 0;
+}
+
+header .header .gloval-nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 80px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header .header .gloval-nav ul li a:hover {
+  opacity: 0.6;
+}
+
+header .header .gloval-nav ul li a:visited {
+  color: #d9ff00;
+}
+
+@media screen and (max-width: 768px) {
+  header .header .gloval-nav {
+    display: none;
+  }
+}
+
+.drawer {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .drawer {
+    display: block;
+  }
+}
+
+.drawer-icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 17px;
+  text-align: center;
+  top: 29px;
+  z-index: 101;
+}
+
+.drawer-open {
+  display: block;
+}
+
+.m_checked .drawer-open {
+  display: none;
+}
+
+.drawer-close {
+  display: none;
+}
+
+.m_checked .drawer-close {
+  display: block;
+}
+
+.drawer-content {
+  background: rgba(51, 51, 51, 0.9);
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  padding: 40px 16px 16px;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 100;
+}
+
+.m_checked .drawer-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer-nav li a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 6px solid transparent;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 20px 12px 24px 0;
+  text-decoration: none;
+}
+
+.drawer-nav li a::before {
+  content: "\f015";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.drawer-nav li:nth-child(1) > a::before {
+  content: "\f015";
+}
+
+.drawer-nav li:nth-child(2) > a::before {
+  content: "\f02d";
+}
+
+.drawer-nav li:nth-child(3) > a::before {
+  content: "\f157";
+}
+
+.drawer-nav li:nth-child(4) > a::before {
+  content: "\f109";
+}
+
+.drawer-nav li:nth-child(5) > a::before {
+  content: "\f1ad";
+}
+
+.drawer-nav li:nth-child(6) > a::before {
+  content: "\f0e0";
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.heading::before {
+  content: "";
+  border-radius: 5px;
+  background-color: #0014CE;
+  width: 4rem;
+  height: 0.3rem;
+  position: absolute;
+  bottom: -1.5rem;
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.h2-heading {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .h2-heading {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h2-heading {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.h3-heading {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1.7rem;
+  padding: 0.4em 0.5em;
+  /*文字の上下 左右の余白*/
+  color: #494949;
+  /*文字色*/
+  background: #f4f4f4;
+  /*背景色*/
+  border-left: solid 5px #7db4e6;
+  /*左線*/
+  border-bottom: solid 3px #d7d7d7;
+  /*下線*/
+}
+
+@media screen and (max-width: 768px) {
+  .h3-heading {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h3-heading {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.h4-heading {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  position: relative;
+  padding: 0.1em 0.5em;
+  background: -webkit-linear-gradient(to right, #d9ff00, transparent);
+  background: linear-gradient(to right, #d9ff00, transparent);
+  color: #545454;
+}
+
+@media screen and (max-width: 768px) {
+  .h4-heading {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h4-heading {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+}
+
+.detail-list {
+  margin: 1.7rem;
+}
+
+.main-image {
+  background-image: url("../img/e2de69f2a30cf1557891b24440c64bfc_m.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+  text-align: center;
+}
+
+.main-text {
+  position: absolute;
+  color: #ffffff;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.h1-heading {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .h1-heading {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h1-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.break {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .break {
+    display: block;
+  }
+}
+
+.services {
+  display: flex;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    display: block;
+  }
+}
+
+.service {
+  width: 33.33333%;
+  border: solid 1px #565656;
+  border-radius: 5px 5px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    width: 100%;
+  }
+}
+
+.explane {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.thead {
+  padding: 1rem;
+  background-color: #4C66FF;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.standard {
+  background-color: #0014CE;
+}
+
+.price {
+  padding: 1rem;
+  background-color: #d9ff00;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    display: block;
+  }
+}
+
+.product {
+  width: calc( 33.3333% - 20px/3);
+  margin-right: 10px;
+}
+
+.product:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: calc( 50% - 5px);
+  }
+  .product:nth-child(3n) {
+    margin-right: 10px;
+  }
+  .product:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.product img {
+  widows: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5rem 1rem 5rem;
+  max-width: 768px;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.label {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    display: block;
+  }
+}
+
+input {
+  width: calc( 618px - 10rem);
+  height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+}
+
+textarea {
+  width: calc( 618px - 10rem);
+  height: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+.input {
+  margin-bottom: 2rem;
+}
+
+.feature {
+  position: absolute;
+  color: white;
+  background-color: #f34955;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.tax {
+  font-size: 1rem;
+}
+
+.profile {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #eeeeee;
+}
+
+.profile tr {
+  border-bottom: solid 2px #ffff;
+}
+
+.profile tr:last-child {
+  border-bottom: none;
+}
+
+.profile th {
+  background-color: #0014CE;
+  color: #ffff;
+  width: 20%;
+  padding: 0.5rem;
+}
+
+.profile td {
+  padding: 0.5rem;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .profile th, .profile td {
+    display: block;
+    width: 100%;
+  }
+}
+
+.btn-inquiry, .btn-submit {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
+  font-weight: bold;
+  overflow: hidden;
+  background: linear-gradient(#7c84c7 0%, #0014CE 100%);
+  text-shadow: 1px 1px 1px rgba(48, 47, 47, 0.66);
+  border: none;
+  margin: 2rem auto 2rem;
+  color: #fff;
+}
+
+.btn-inquiry:active, .btn-submit:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  /*沈むように*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  outline: 0;
+  background-image: linear-gradient(#7c84c7 0%, #5761b9 100%);
+  /*グラデーションを明るく*/
+}
+
+.btn-inquiry:focus, .btn-submit:focus {
+  outline: 0;
+}
+
+.btn-inquiry a, .btn-submit a {
+  text-decoration: none;
+  line-height: 2.5rem;
+  display: block;
+  color: #fff;
+}
+
+.btn-submit {
+  width: 5rem;
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.btn-to-top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: linear-gradient(#7179c7 0%, #0014CE 100%);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  z-index: 9;
+  text-align: center;
+}
+
+.fa-angle-up {
+  color: #fff;
+  font-size: 4rem;
+}
+
+footer {
+  background-color: rgba(0, 38, 255, 0.7);
+  color: #ffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer .footer-logo {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 200px;
+  height: 60px;
+}
+
+html, body {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 16px;
+  line-height: 1.7rem;
+  color: #454545;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#service-section, #fee-section, #products-section, #profile-section, #contact-section {
+  padding-top: 80px;
+}

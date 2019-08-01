@@ -1,0 +1,43 @@
+.feature{
+    position: absolute;
+    color:white;
+    background-color: #f34955;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+.tax{
+    font-size: 1rem;
+}
+
+.profile{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eeeeee;
+    
+    tr{
+        border-bottom: solid 2px #ffff;
+        &:last-child{
+            border-bottom:none;
+        }
+    }
+    th{
+        background-color: #0014CE;
+        color: #ffff;
+        width: 20%;
+        padding: 0.5rem;
+    }
+    td{
+        padding: 0.5rem;
+        width: 80%;
+    }
+    @include mq(){
+        th, td{
+            display: block;
+            width: 100%;
+        }
+    }
+}

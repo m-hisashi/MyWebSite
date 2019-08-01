@@ -1,0 +1,149 @@
+header{
+    background-color: rgba(0, 38, 255, 0.7);
+    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.28);
+    color: #ffffff;
+    position: fixed;
+    transition: .5s;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    .header{
+        display: flex;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        .header-logo{
+            background-image: url('../img/logo.png');
+            background-size: cover;
+            width: 200px;
+            height: 60px;
+            position: relative;
+            top: 10px;
+        }
+        .gloval-nav{
+            margin-right: 0;
+            margin-left: auto;
+            
+            ul{
+                display: flex;
+                li{
+                    margin-right: 20px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        line-height: 80px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        &:hover{
+                           opacity: 0.6;
+                        }
+                        &:visited{
+                            color: rgb(217, 255, 0);
+                        }
+                    }
+                    
+                }
+            }
+            @include mq(){
+                display:none;
+            }
+        }
+    }
+}
+.drawer{
+    display: none;
+    @include mq(){
+        display: block;
+    }
+
+}
+.drawer-icon {
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	right: 17px;
+	text-align: center;
+	top: 29px;
+	z-index: 101;
+}
+
+.drawer-open {
+	display: block;
+}
+
+.m_checked .drawer-open {
+	display: none;
+}
+
+.drawer-close {
+	display: none;
+}
+
+.m_checked .drawer-close {
+	display: block;
+}
+
+.drawer-content {
+	background: rgba(51, 51, 51, 0.9);
+	height: 100vh;
+	left: 0;
+	opacity: 0;
+	overflow: auto;
+	padding: 40px 16px 16px;
+	position: fixed;
+	text-align: left;
+	top: 0;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 100%;
+	z-index: 100;
+}
+
+.m_checked .drawer-content {
+	opacity: 1;
+	visibility: visible;
+}
+
+.drawer-nav li a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 6px solid transparent;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	padding: 20px 12px 24px 0;
+	text-decoration: none;
+}
+
+.drawer-nav li a::before {
+	content: "\f015";
+	font-family: "Font Awesome 5 Free", sans-serif;
+	font-weight: 900;
+	margin-right: 8px;
+}
+
+.drawer-nav li:nth-child(1) > a::before {
+	content: "\f015";
+}
+
+.drawer-nav li:nth-child(2) > a::before {
+	content: "\f02d";
+}
+
+.drawer-nav li:nth-child(3) > a::before {
+	content: "\f157";
+}
+
+.drawer-nav li:nth-child(4) > a::before {
+	content: "\f109";
+}
+
+.drawer-nav li:nth-child(5) > a::before {
+	content: "\f1ad";
+}
+.drawer-nav li:nth-child(6) > a::before {
+	content: "\f0e0";
+}

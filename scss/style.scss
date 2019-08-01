@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700&display=swap&subset=japanese');
+@import "_reset";
+@import "_mixin";
+@import "_header";
+@import "_heading";
+@import "_main-image";
+@import "_service";
+@import "_product";
+@import "_form";
+@import "_table";
+@import "_btn";
+@import "_footer";
+
+html,body{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 16px;
+    line-height: 1.7rem;
+    color: #454545;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+}
+#service-section, #fee-section, #products-section, #profile-section, #contact-section{
+    padding-top: 80px;
+}
