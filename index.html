@@ -244,7 +244,8 @@
         <div class="container">
             <div class="heading wow fadeInUp"><h2 class="h2-heading">お問い合わせ</h2></div>
             <div class="form wow fadeInUp">
-                <form name="contact" method="POST" netlify>
+                <form name="contact" method="POST" action="thank-you"  data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <p class="input">
                         <label class="label" for="name">お名前</label><input type="text" name="name" id="name"/>   
                     </p>
