@@ -110,9 +110,11 @@ input, select {
 
 header {
   background-color: rgba(0, 38, 255, 0.7);
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
   color: #ffffff;
   position: fixed;
+  -webkit-transition: .5s;
   transition: .5s;
   height: 80px;
   width: 100%;
@@ -120,8 +122,11 @@ header {
 }
 
 header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 1180px;
+  height: 80px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -141,6 +146,8 @@ header .header .gloval-nav {
 }
 
 header .header .gloval-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -221,6 +228,7 @@ header .header .gloval-nav ul li a:visited {
   position: fixed;
   text-align: left;
   top: 0;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   visibility: hidden;
   width: 100%;
@@ -347,7 +355,7 @@ header .header .gloval-nav ul li a:visited {
   line-height: 1.8rem;
   position: relative;
   padding: 0.1em 0.5em;
-  background: -webkit-linear-gradient(to right, #d9ff00, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(#d9ff00), to(transparent));
   background: linear-gradient(to right, #d9ff00, transparent);
   color: #545454;
 }
@@ -386,10 +394,8 @@ header .header .gloval-nav ul li a:visited {
   color: #ffffff;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .h1-heading {
@@ -420,6 +426,8 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-top: 3rem;
@@ -466,6 +474,8 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -618,9 +628,11 @@ textarea {
   height: 2.5rem;
   border-radius: 5px;
   text-align: center;
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
   font-weight: bold;
   overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7c84c7), to(#0014CE));
   background: linear-gradient(#7c84c7 0%, #0014CE 100%);
   text-shadow: 1px 1px 1px rgba(48, 47, 47, 0.66);
   border: none;
@@ -632,8 +644,10 @@ textarea {
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
   /*沈むように*/
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   outline: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7c84c7), to(#5761b9));
   background-image: linear-gradient(#7c84c7 0%, #5761b9 100%);
   /*グラデーションを明るく*/
 }
@@ -662,7 +676,9 @@ textarea {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7179c7), to(#0014CE));
   background: linear-gradient(#7179c7 0%, #0014CE 100%);
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.28);
   border-radius: 50%;
   width: 4rem;
@@ -683,11 +699,55 @@ footer {
   padding-bottom: 1rem;
 }
 
-footer .footer-logo {
+.footer-logo {
   background-image: url("../img/logo.png");
   background-size: cover;
   width: 200px;
   height: 60px;
+}
+
+.footer-sns {
+  display: flex;
+}
+
+.sns-item {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.facebook {
+  display: inline-block;
+  background-color: #1877F2;
+  background-position: center top;
+  color: #ffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 2rem;
+}
+
+.twitter {
+  display: inline-block;
+  background-color: #1DA1F2;
+  color: #ffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.line {
+  display: inline-block;
+  background-color: #00B900;
+  color: #ffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
 }
 
 html, body {

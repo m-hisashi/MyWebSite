@@ -3,10 +3,49 @@ footer{
     color: #ffff;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    .footer-logo{
-        background-image: url('../img/logo.png');
-        background-size: cover;
-        width: 200px;
-        height: 60px;
-    }
+}
+.footer-logo{
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    width: 200px;
+    height: 60px;
+}
+.footer-sns{
+    display: flex;
+}
+.sns-item{
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+.facebook{
+    display: inline-block;
+    background-color: #1877F2;
+    background-position: center top;
+    color: #ffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 2rem;
+}
+.twitter{
+    display: inline-block;
+    background-color: #1DA1F2;
+    color: #ffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+}
+.line{
+    display: inline-block;
+    background-color: #00B900;
+    color: #ffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
 }
