@@ -34,6 +34,10 @@ textarea{
     margin-bottom: 2rem;
 }
 
-.recaptcha{
-    margin: 1rem auto 1rem;
+.recaptcha {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
 }
