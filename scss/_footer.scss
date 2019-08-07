@@ -4,14 +4,22 @@ footer{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .footer-logo{
     background-image: url('../img/logo.png');
     background-size: cover;
     width: 200px;
     height: 60px;
+    margin: 0 auto 1rem;
 }
 .footer-sns{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    margin: 0 auto 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .sns-item{
     margin-right: 20px;
@@ -48,4 +56,7 @@ footer{
     border-radius: 50%;
     text-align: center;
     line-height: 2rem;
+}
+.copy-right{
+    text-align: center;
 }

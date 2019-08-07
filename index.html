@@ -245,7 +245,7 @@
         <div class="container">
             <div class="heading wow fadeInUp"><h2 class="h2-heading">お問い合わせ</h2></div>
             <div class="form wow fadeInUp">
-                <form name="contact" method="POST" action="thank-you"  data-netlify="true">
+                <form name="contact" method="POST" action="thank-you"  data-netlify-recaptcha="true" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <p class="input">
                         <label class="label" for="name">お名前</label><input type="text" name="name" id="name"/>   
@@ -259,6 +259,7 @@
                     <p class="input">
                         <label class="label" for="content">お問い合わせ内容</label><textarea name="message" id="content"></textarea>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p class="btn-wrap">
                         <button class="btn-submit" type="submit">送信</button>
                     </p>
