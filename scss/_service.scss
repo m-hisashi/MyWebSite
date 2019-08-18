@@ -1,23 +1,17 @@
 
 .services{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
     @include mq(){
-        display:block;
+        grid-template-columns: 1fr;
     }
 }
 .service{
-    width: 33.33333%;
     border: solid 1px #565656;
     border-radius: 5px 5px 0 0;
-    
-    @include mq(){
-        width: 100%;
-    }
 }
 
 .explane{
@@ -33,7 +27,14 @@
 .standard{
     background-color: #0014CE;
 }
-.price{
+
+.content{
+    text-align: left;
+    height: auto;
     padding:1rem;
     background-color: rgb(217, 255, 0);
+}
+.init{
+    margin: 0 0 0 1rem;
+    padding: 0;
 }

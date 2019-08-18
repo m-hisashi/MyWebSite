@@ -266,18 +266,14 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .drawer-nav li:nth-child(3) > a::before {
-  content: "\f157";
-}
-
-.drawer-nav li:nth-child(4) > a::before {
   content: "\f109";
 }
 
-.drawer-nav li:nth-child(5) > a::before {
+.drawer-nav li:nth-child(4) > a::before {
   content: "\f1ad";
 }
 
-.drawer-nav li:nth-child(6) > a::before {
+.drawer-nav li:nth-child(5) > a::before {
   content: "\f0e0";
 }
 
@@ -374,10 +370,6 @@ header .header .gloval-nav ul li a:visited {
   }
 }
 
-.detail-list {
-  margin: 1.7rem;
-}
-
 .main-image {
   background-image: url("../img/e2de69f2a30cf1557891b24440c64bfc_m.jpg");
   background-size: cover;
@@ -426,9 +418,8 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -436,20 +427,13 @@ header .header .gloval-nav ul li a:visited {
 
 @media screen and (max-width: 768px) {
   .services {
-    display: block;
+    grid-template-columns: 1fr;
   }
 }
 
 .service {
-  width: 33.33333%;
   border: solid 1px #565656;
   border-radius: 5px 5px 0 0;
-}
-
-@media screen and (max-width: 768px) {
-  .service {
-    width: 100%;
-  }
 }
 
 .explane {
@@ -468,9 +452,16 @@ header .header .gloval-nav ul li a:visited {
   background-color: #0014CE;
 }
 
-.price {
+.content {
+  text-align: left;
+  height: auto;
   padding: 1rem;
   background-color: #d9ff00;
+}
+
+.init {
+  margin: 0 0 0 1rem;
+  padding: 0;
 }
 
 .products {
@@ -776,4 +767,8 @@ html, body {
 
 #service-section, #fee-section, #products-section, #profile-section, #contact-section {
   padding-top: 80px;
+}
+
+ul {
+  list-style: none;
 }

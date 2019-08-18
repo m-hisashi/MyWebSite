@@ -141,17 +141,17 @@ header{
 	content: "\f02d";
 }
 
-.drawer-nav li:nth-child(3) > a::before {
-	content: "\f157";
-}
+// .drawer-nav li:nth-child(3) > a::before {
+// 	content: "\f157";
+// }
 
-.drawer-nav li:nth-child(4) > a::before {
+.drawer-nav li:nth-child(3) > a::before {
 	content: "\f109";
 }
 
-.drawer-nav li:nth-child(5) > a::before {
+.drawer-nav li:nth-child(4) > a::before {
 	content: "\f1ad";
 }
-.drawer-nav li:nth-child(6) > a::before {
+.drawer-nav li:nth-child(5) > a::before {
 	content: "\f0e0";
 }
