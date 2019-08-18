@@ -371,7 +371,7 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .main-image {
-  background-image: url("../img/e2de69f2a30cf1557891b24440c64bfc_m.jpg");
+  background-image: url("../img/image.webp");
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -418,8 +418,9 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -427,36 +428,49 @@ header .header .gloval-nav ul li a:visited {
 
 @media screen and (max-width: 768px) {
   .services {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
 
-.service {
+.services .service {
   border: solid 1px #565656;
   border-radius: 5px 5px 0 0;
+  width: 33.3333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
-.explane {
+.services .service .thead {
   padding: 1rem;
-  text-align: justify;
-}
-
-.thead {
-  padding: 1rem;
+  width: 100%;
   background-color: #4C66FF;
   font-weight: bold;
   color: #ffffff;
 }
 
-.standard {
-  background-color: #0014CE;
-}
-
-.content {
+.services .service .content {
   text-align: left;
-  height: auto;
+  width: 100%;
   padding: 1rem;
   background-color: #d9ff00;
+}
+
+.services .service .explane {
+  padding: 1rem;
+  text-align: justify;
+  width: 100%;
+}
+
+.standard {
+  background-color: #0014CE;
 }
 
 .init {
