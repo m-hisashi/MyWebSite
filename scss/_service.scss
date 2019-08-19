@@ -1,31 +1,22 @@
 
 .services{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
     @include mq(){
-        display:block;
+        grid-template-columns: 1fr;
     }
     .service{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4rem 1fr 1fr;
         border: solid 1px #565656;
         border-radius: 5px 5px 0 0;
-        width: 33.3333%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: stretch;
-            -ms-flex-align: stretch;
-                align-items: stretch;
         .thead{
-            padding: 1rem;
-            width: 100%;
+            justify-content: center;
+            line-height: 4rem;
             background-color: #4C66FF;
             font-weight: bold;
             color: #ffffff;
