@@ -48,7 +48,7 @@
         </div><!--/header-->
     </header>
     
-    <div class="main-image">
+    <div class="main-image lazyload" data-src="img/image.webp">
         <div class="container">
             <div class="main-text">
                 <h1 class="h1-heading">世界に<br class="break">つながる</h1>
@@ -152,7 +152,7 @@
             <div class="products wow fadeInUp">
                 <div class="product">
                     <dl><a href="https://shiromoto-s.or.jp">
-                        <dt><img src="img/shiromoto.webp" alt="城本クリニック" ></dt>
+                        <dt><img class="lazyload" src="img/shiromoto.webp" data-src="img/shiromoto.webp" alt="城本クリニック" ></dt>
                         <dd class="product-title">医療法人 芥子会　城本クリニック</dd>
                         <dd class="product-explane"></dd>
                     
@@ -272,6 +272,7 @@
         </div><!--/container-->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lazysizes.min.js" async=""></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
