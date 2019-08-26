@@ -371,7 +371,6 @@ header .header .gloval-nav ul li a:visited {
 }
 
 .main-image {
-  background-image: url("../img/image.webp");
   background-size: cover;
   background-position: center center;
   width: 100%;
