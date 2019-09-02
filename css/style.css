@@ -760,7 +760,7 @@ footer {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/webfonts/fa-brands-400.woff2") format("woff2");
+  src: url("https://use.fontawesome.com/releases/v5.6.1/webfonts/fa-brands-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -768,14 +768,14 @@ footer {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/webfonts/fa-regular-400.woff2") format("woff2"), url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/webfonts/fa-solid-900.woff2") format("woff2");
+  src: url("https://use.fontawesome.com/releases/v5.6.1/webfonts/fa-solid-900.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot");
-  src: url("../font/fontello.eot?#iefix") format("embedded-opentype"), url("../font/fontello.woff") format("woff"), url("../font/fontello.ttf") format("truetype"), url("../font/fontello.svg#webfont") format("svg");
+  src: url("../fontello-icon/font/fontello.eot");
+  src: url("../fontello-icon/font/fontello.eot?#iefix") format("embedded-opentype"), url("../fontello-icon/font/fontello.woff") format("woff"), url("../fontello-icon/font/fontello.ttf") format("truetype"), url("../fontello-icon/font/fontello.svg#webfont") format("svg");
 }
 
 html, body {
