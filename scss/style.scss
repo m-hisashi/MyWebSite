@@ -14,7 +14,7 @@
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
     font-weight: 400;
-    src: url("https://use.fontawesome.com/releases/v5.6.1/webfonts/fa-brands-400.woff2") format("woff2");
+    src: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/webfonts/fa-brands-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -22,7 +22,8 @@
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 900;
-    src:url("https://use.fontawesome.com/releases/v5.6.1/webfonts/fa-solid-900.woff2") format("woff2");
+    src:url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/webfonts/fa-regular-400.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/webfonts/fa-solid-900.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
@@ -32,6 +33,7 @@
          url('../fontello-icon/font/fontello.woff') format('woff'),
          url('../fontello-icon/font/fontello.ttf') format('truetype'),
          url('../fontello-icon/font/fontello.svg#webfont') format('svg');
+    font-display: swap;
   }
 html,body{
     font-family: 'M PLUS 1p', sans-serif;

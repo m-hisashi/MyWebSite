@@ -19,6 +19,7 @@
 .h1-heading{
     font-size: 3rem;
     line-height: 3.5rem;
+    font-weight: bold;
     @include mq(){
         font-size: 2.8rem;
     }
