@@ -10,7 +10,65 @@
 @import "_table";
 @import "_btn";
 @import "_footer";
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.10.2.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.10.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.9.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.8.2.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.8.1.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.8.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.7.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.6.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.4.2.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.4.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.3.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.2.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.1.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.12.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.11.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.10.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.9.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.5.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.3.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.2.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.1.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-brands-400-free-5.0.0.woff2") format("woff2");
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src:url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.10.2.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.10.1.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.9.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.8.2.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.8.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.7.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.6.3.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.6.1.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.6.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.5.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.4.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.3.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.2.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.1.1.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.1.0.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.13.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.11.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.10.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.9.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.7.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.5.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.3.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.1.woff2") format("woff2"),
+    url("https://kit-free.fontawesome.com/algo/2/webfonts/fa-solid-900-free-5.0.0.woff2") format("woff2");
+    font-display: swap;
+}
 @font-face {
     font-family: 'fontello';
     src: url('../fontello-icon/font/fontello.eot');
